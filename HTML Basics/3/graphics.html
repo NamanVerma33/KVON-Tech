@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Graphiccs Practice</title>
+  </head>
+  <body>
+    <canvas
+      width="200px"
+      height="100"
+      id="canvasID"
+      style="border: 1px solid black"
+    ></canvas>
+
+    <canvas
+      id="circle"
+      width="200px"
+      height="100px"
+      style="border: 1px solid black"
+    ></canvas>
+
+    <canvas
+      id="text"
+      width="200px"
+      height="100px"
+      style="border: 1px solid black"
+    ></canvas>
+
+    <canvas
+      id="stroke"
+      height="100px"
+      width="200px"
+      style="border: 1px solid black"
+    >
+    </canvas>
+
+    <canvas
+      id="linear"
+      height="100px"
+      width="200px"
+      style="border: 1px solid black"
+    ></canvas>
+
+    <p>Canvas to fill:</p>
+    <canvas
+      id="circular"
+      height="100px"
+      width="200px"
+      style="border: 1px solid black"
+    ></canvas>
+
+    <canvas
+      id="image"
+      height="100px"
+      width="200px"
+      style="border: 1px solid black"
+    ></canvas>
+    <img src="/images/OIP.jpeg" id="scream" alt="" width="50px" />
+    <script>
+      var c = document.getElementById("canvasID");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+
+      var d = document.getElementById("circle");
+      var ctx = d.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+      ctx.stroke();
+
+      var e = document.getElementById("text");
+      var ctx = e.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.fillText("Hello World! ", 10, 90);
+
+      var f = document.getElementById("stroke");
+      var ctx = f.getContext("2d");
+      ctx.font = "40px Times New Roman";
+      ctx.strokeText("Hello", 10, 50);
+
+      var g = document.getElementById("linear");
+      var ctx = g.getContext("2d");
+      var grd = ctx.createLinearGradient(0, 0, 200, 0);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+
+      ctx.fillStyle = grd;
+      ctx.fillRect(20, 10, 150, 80);
+
+      var h = document.getElementById("circular");
+      var ctx = h.getContext("2d");
+      var grd = ctx.createRadialGradient(75, 35, 5, 90, 60, 100);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+
+      var i = document.getElementById("image");
+      var ctx = i.getContext("2d");
+      var img = document.getElementById("scream");
+      ctx.drawImage(img, 10, 10);
+    </script>
+  </body>
+</html>
