@@ -1,0 +1,18 @@
+body{
+    background-image: url(/Projects/images/istockphoto-1423997728-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#list-heading{
+    color: orangered;
+    text-align: center;
+    font-size: 50px;
+}
+.list-main{
+    color: white;
+    font-size: 30px;
+}
+.sub{
+    font-size: 25px;
+    color: rgb(103, 236, 8);
+}

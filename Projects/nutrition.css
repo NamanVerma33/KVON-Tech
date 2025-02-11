@@ -1,0 +1,32 @@
+body{
+    background-image: url(images/motivational-text-with-healthy-elements_1134-373.avif);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 810px;
+}
+#nutrition-heading{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    color: orangered;
+}
+.nutrition-para{
+    color: white;
+    font-size: 30px;
+}
+table ,th, td{
+    border: 2px solid orangered;
+    border-collapse: collapse;
+    padding: 5px;
+
+}
+th{
+    font-size: 40px;
+    color: white;
+}
+td{
+    font-size: 30px;
+    color: rgb(240, 243, 255);
+    font-weight: 400;
+}

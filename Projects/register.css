@@ -1,0 +1,28 @@
+body{
+    background-image: url(/Projects/images/20465a2eb9d1aef97a928968ab7efa15.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+*{
+    color: white;
+}
+.register-heading{
+    font-size: 50px;
+}
+.text{
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+.submit{
+ color: black;
+ width: 70px;
+ height: 40px;
+ border-radius: 10px;
+ margin-top: 10px;
+}
+.box{
+    margin: 10px 0;
+    height: 20px;
+}

@@ -1,40 +1,51 @@
-<h1><center>Registration Form</center></h1>
-<fieldset>
-  <legend style="text-align: center">Enter User Details</legend>
-  <label for="fname">Enter your First name</label>
-  <br />
-  <input type="text" id="fname" name="firstname" />
-  <br />
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project</title>
+    <link rel="stylesheet" href="/Projects/register.css" />
+  </head>
+  <body>
+    <h1 class="register-heading"><center>Registration Form</center></h1>
+    <fieldset>
+      <legend style="text-align: center; font-size: 25px">
+        Enter User Details
+      </legend>
+      <label for="fname" class="text">Enter your First name</label>
+      <br />
+      <input type="text" id="fname" name="firstname" class="box" />
+      <br />
 
-  <label for="lname">Enter your Last name</label>
-  <br />
+      <label for="lname" class="text">Enter your Last name</label>
+      <br />
 
-  <input type="text" id="lname" name="lastname" />
-  <br />
+      <input type="text" id="lname" name="lastname" class="box" />
+      <br />
 
-  <label for="gender">Gender</label>
-  <br />
+      <label for="gender" class="text">Gender:</label>
+      <br />
 
-  <input type="radio" name="gender" id="male" />Male
-  <input type="radio" name="gender" id="male" />Female
-  <input type="radio" name="gender" id="male" />Others
-  <br />
+      <input type="radio" name="gender" id="male" />Male
+      <input type="radio" name="gender" id="male" />Female
+      <input type="radio" name="gender" id="male" />Others
+      <br />
 
-  <label for="checkbox">Interests in sports</label>
-  <br />
+      <label for="checkbox" class="text">Interests in sports</label>
+      <br />
 
-  <input type="checkbox" name="hockey" id="hockey" />Hockey
-  <input type="checkbox" name="cricket" id="cricket" />Cricket
-  <input type="checkbox" name="football" id="football" />Football
-  <br />
-  <label for="password">Enter your password</label>
-  <br />
+      <input type="checkbox" name="hockey" id="hockey" />Hockey
+      <input type="checkbox" name="cricket" id="cricket" />Cricket
+      <input type="checkbox" name="football" id="football" />Football
+      <br />
+      <label for="password" class="text">Enter your password</label>
+      <br />
 
-  <input type="password" id="password" name="password" />
-  <br />
-  <label for="cpassword">Confirm your password</label>
-  <br />
-  <input type="password" id="cpassword" name="password" />
-  <br />
-  <input type="submit" value="Submit" />
-</fieldset>
+      <input type="password" id="password" name="password" class="box" />
+      <br />
+      <label for="cpassword" class="text">Confirm your password</label>
+      <br />
+      <input type="password" id="cpassword" name="password" class="box" />
+      <br />
+      <input type="submit" value="Submit" class="submit" />
+    </fieldset>
+  </body>
+</html>
