@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice</title>
+  </head>
+  <body>
+    <canvas
+      width="200"
+      height="100"
+      style="border: 1px solid black"
+      id="line"
+    ></canvas>
+
+    <canvas
+      width="200"
+      height="100"
+      style="border: 1px solid black"
+      id="circle"
+    ></canvas>
+
+    <canvas
+      width="200"
+      height="100"
+      style="border: 1px solid black"
+      id="text"
+    ></canvas>
+
+    <canvas
+      width="200"
+      height="100"
+      style="border: 1px solid black"
+      id="stroke"
+    ></canvas>
+
+    <script>
+      var c = document.getElementById("line");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+
+      var d = document.getElementById("circle");
+      var ctx = d.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95, 50, 45, 0, 2 * Math.PI);
+      ctx.stroke();
+
+      var e = document.getElementById("text");
+      var ctx = e.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.fillText("Hello", 10, 30);
+
+      var f = document.getElementById("stroke");
+      var ctx = f.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.strokeText("Hello", 40, 40);
+    </script>
+  </body>
+</html>
