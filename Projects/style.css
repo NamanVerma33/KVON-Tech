@@ -7,9 +7,6 @@
     display: flex;
     align-items: center;
 }
-.leftsection{
-    background-color: aqua;
-}
 .rightsection ul{
     list-style-type: none;
 }
@@ -38,6 +35,26 @@ a:hover{
     background:url(/Projects/images/hero-1.jpg);
     height: 1000px;
 }
+
+#hero-title{
+    font-family: 'Arial';
+    font-size: 100px;
+    color: orangered;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+#hero-para{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+}
+.middle{
+    width: 500px;
+    /* border: 1px red solid; */
+}
+
 .about{
     background-color: aquamarine;
 }
+
