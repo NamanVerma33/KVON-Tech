@@ -2,6 +2,51 @@
 <html>
   <head>
     <title>CSS Basics</title>
+    <link rel="stylesheet" href="css_Basics.css" />
+    <!--External CSS-->
+    <!-- Internal CSS by style tag -->
+    <style>
+      .left {
+        color: rgb(11, 190, 29);
+      }
+      #shorthand {
+        border: 3px solid red;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1 id="heading">This is heading</h1>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+      voluptatum.
+    </p>
+    <p class="para left">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusamus.
+      Officiis maiores illo quidem totam?
+    </p>
+
+    <p
+      style="
+        font-size: 30px;
+        background-image: url('/Projects/images/20465a2eb9d1aef97a928968ab7efa15.jpg');
+        color: aliceblue;
+      "
+    >
+      Background Image
+    </p>
+
+    <div id="box"></div>
+
+    <h1 style="border-style: solid">Solid Borders</h1>
+    <h1 style="border-style: dashed">Dashed Borders</h1>
+    <h1 style="border-style: dotted">Dotted Borders</h1>
+    <h1 style="border-style: double">Double Borders</h1>
+    <h1 style="border-style: groove">Different Borders</h1>
+    <h1 style="border-style: inset">Different Borders</h1>
+
+    <p id="shorthand">Border Shorthand</p>
+    <p style="border-style: solid; border-radius: 5px; background-color: aqua">
+      Border
+    </p>
+  </body>
 </html>

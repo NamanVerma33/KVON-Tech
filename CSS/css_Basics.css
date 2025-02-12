@@ -1,0 +1,12 @@
+#heading{
+    background-color: aqua;
+}
+.para{
+    color: red;
+}
+
+#box{
+    width: 500px;
+    height: 500px;
+    background-image: url('/Projects/images/motivational-text-with-healthy-elements_1134-373.avif');
+}
