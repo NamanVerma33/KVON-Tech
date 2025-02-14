@@ -1,0 +1,35 @@
+.sidebar{
+    width: 72px;
+    position: fixed;
+    top: 57px;
+    background-color: white;
+    bottom: 0;
+    z-index: 200;
+    border-right: 1px solid rgb(222, 222, 222);
+}
+.sideBox{
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+}
+.home-icon{
+    height:24px;
+}
+.explore-icon{
+    height:24px;
+}
+.subscription-icon{
+    height:24px;
+}
+.origianl-icon{
+    height:24px;
+}
+.music-icon{
+    height:24px;
+}
+.library-icon{
+    height:24px;
+}
