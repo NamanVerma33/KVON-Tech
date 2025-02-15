@@ -1,0 +1,17 @@
+.box1{
+    height: 200px;
+    width: 400px;
+    background-image: conic-gradient(red,yellow,green);
+}
+.box2{
+    height: 200px;
+    width: 400px;
+    background-image: conic-gradient(red,yellow,green,blue,black);
+    border-radius: 50%;
+}
+.box3{
+    height: 200px;
+    width: 400px;
+    background-image: repeating-conic-gradient(at 45% 55%,red 5%, green 10%,yellow 15%,blue 20%,black 25%);
+
+}
