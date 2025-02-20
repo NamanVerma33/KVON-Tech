@@ -17,7 +17,7 @@
     ></script>
   </head>
   <body>
-    <div class="container p-5">
+    <div class="container p-5 mt-5 mx-5">
       <div
         id="demo"
         class="carousel slide"
@@ -92,5 +92,59 @@
         </button>
       </div>
     </div>
+
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-titte="p"
+    >
+      Tooltip on top
+    </button>
+    <!-- <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-title="Tooltip on top 1"
+    >
+      Tooltip on top
+    </button> -->
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-title="Tooltip on right"
+    >
+      Tooltip on right
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="bottom"
+      data-bs-title="Tooltip on bottom"
+    >
+      Tooltip on bottom
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      data-bs-title="Tooltip on left"
+    >
+      Tooltip on left
+    </button>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
   </body>
 </html>
