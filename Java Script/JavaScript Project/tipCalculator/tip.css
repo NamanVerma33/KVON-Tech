@@ -1,0 +1,13 @@
+body{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-height: 400px;
+    min-width: 300px;
+    background-color: rgb(92, 68, 68);
+}
