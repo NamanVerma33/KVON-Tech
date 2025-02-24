@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+}
+.result{
+    width: 240px;
+    height: 100px;
+    background-color: rgb(128, 128, 128);
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px black;
+}
+h6{
+    display: inline;
+}
+.slider{
+    display: flex;
+    justify-content: space-evenly;
+}
+input{
+    width: 180px;
+}
+.last{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
