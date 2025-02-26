@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Waether Application</title>
+    <title>Weather Application</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
   </head>
   <body>
     <div class="container">
+      <h2 style="margin-bottom: 10px">Weather Application</h2>
       <div class="header">
         <div class="input-box">
           <input
@@ -23,11 +24,15 @@
           <button id="submit" class="fa-solid fa-magnifying-glass"></button>
         </div>
       </div>
+      <div class="location-error">
+        <h1 class="error">Sorry 404 Error, Enter the correct Location</h1>
+        <img src="Aspects/404.png" alt="" />
+      </div>
       <div class="weather-body">
         <img src="Aspects/clear.png" alt="Weather Image" srcset="" id="image" />
         <div class="weather-description-box">
           <div class="temperature-description">
-            <p id="temperature">0 <sup>°C</sup></p>
+            <p id="temperature">0<sup>°C</sup></p>
             <p id="description">Light Rain</p>
           </div>
         </div>

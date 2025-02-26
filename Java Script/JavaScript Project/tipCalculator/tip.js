@@ -1,6 +1,5 @@
-
 function myfunction(){
-    const bill =  document.querySelector('#amount');
+    const bill =  document.querySelector('#amounts');
     const rating = document.querySelector('#rating');
     const people = document.querySelector('#people');
     const type = document.querySelector('#type');
@@ -10,13 +9,15 @@ function myfunction(){
     const amountperperson = document.querySelector('#amountperperson');
 
     let billAmount = parseFloat(bill.value);
+    console.log(billAmount);
     let totalpeople = parseInt(people.value);
+    console.log(totalpeople);
     let mealtype = type.value;
     let serviceRating = parseFloat(rating.value);
     if( isNaN(billAmount) || isNaN(totalpeople)){
         total.textContent = "Please enter valid numbers";
-        pay.textContent = 'he';
-        amountperperson.textContent = 'jhs';
+        pay.textContent = "";
+        amountperperson.textContent = "";
         return;
     }
     let tip;
@@ -36,7 +37,7 @@ function myfunction(){
 }
 
 let totalAmount = billAmount + tip;
-let amountPerPerson = totalAmount / ;
+// let amountPerPerson = totalAmount / ;
 
 if(mealType === "dinner"){
     tip += 5;
