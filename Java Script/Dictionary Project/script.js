@@ -14,6 +14,7 @@ const getWordInfo = async (word)=>{
     const data = await response.json();
    
         
+    console.log(data);
     
     
     let definitions = data[0].meanings[0].definitions[0];
@@ -54,6 +55,4 @@ const getWordInfo = async (word)=>{
       display.innerHTML = `<h3>Word meaning not found</h3>`  
 }
 
-
-    console.log(data);
 } 
