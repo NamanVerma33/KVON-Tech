@@ -1,24 +1,19 @@
 const getpromise = ()=>{
-    new Promise((resolve,reject)=>{
-    console.log("Promise");
-    resolve("Promise resolved");
+    return new Promise((resolve,reject)=>{
+        console.log("This is the Promise");
+        // resolve("Promise resolved");
+        reject("Network error");
     });
 };
 
-
 let promise = getpromise();
-promise.then(()=>{
-    console.log("Promise fullfilled");
-})
+promise.then((res)=>{
+    console.log("Fullfilled : ",res)
+});
 
-
-// promise.then((res)=>{
-//     console.log("fulfilled",res);
-// })
-// p.catch(()=>{
-//     console.log("failed");
-// })
-
+promise.catch((err)=>{
+    console.log("Rejected : ",err);
+});
 
 // function getData(data){
 //     return new Promise((resolve,reject)=>{
@@ -28,3 +23,8 @@ promise.then(()=>{
 //         },5000)
 //     });   
 // }
+
+
+
+
+
