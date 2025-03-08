@@ -16,12 +16,25 @@ function async2(){
 };
 
 console.log("Fetching Data 1....");
-let p1 = async1();
-let p2 = async2();
-p1.then((res)=>{
+// let p1 = async1();
+
+// p1.then((res)=>{
+//     console.log("Resolved ",res);
+//     console.log("Fetching Data 2...")
+//     let p2 = async2();
+//     p2.then((res)=>{
+//         console.log("Resolved ", res)
+//     })   
+// })
+
+// short syntax of above code is
+
+async1().then((res)=>{
     console.log("Resolved ",res);
+    console.log("Fetching Data 2...")
+    async2().then((res)=>{
+        console.log("Resolved ", res)
+    })   
 })
 
-p2.then((res)=>{
-    console.log("Resolved ", res)
-})
+
