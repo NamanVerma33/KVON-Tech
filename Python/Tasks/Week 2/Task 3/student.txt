@@ -1,0 +1,26 @@
+
+
+Student 1
+Name : Naman
+Age : 18
+Marks : 99.0 
+Student 2
+Name : Sandy
+Age : 21
+Marks : 36.0 
+Student 3
+Name : Harshit
+Age : 25
+Marks : 67.0 
+Student 1
+Name : Naman
+Age : 21
+Marks : 45.0 
+Student 2
+Name : dgg
+Age : 32
+Marks : 54.0 
+Student 1
+Name : jbj
+Age : 67
+Marks : 7.0 
